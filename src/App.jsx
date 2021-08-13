@@ -19,24 +19,6 @@ const result = await axios.get(`${requestUrl}${keyword}`);
 return result;
 };
 
-  const onClickGet = async () => {
-const requesturl2 = "http://api.aviationstack.com/v1/airplanes?access_key="
-
-const result2 = await axios.get(`${requesturl2}process.env.AV_APP_ID`);
-console.log(result2);
-};
-
-
-
-  // const url = "http://api.aviationstack.com/v1/airplanes?access_key="+process.env.AV_APP_ID;
-
-  // const  = async() => {
-  //   axios
-  //     .get(url)
-  //     .then(res => console.log(res))
-  //     .catch(err => alert(err));
-  // };
-
 
 
 
@@ -48,7 +30,6 @@ return (
 <BrowserRouter>
   <ChakraProvider>
     <Box margin={{ base: 5, md: 6 }} >
-<Button onClick={onClickGet}>get</Button>
       <Tabs variant="soft-rounded" colorScheme="green">
         <TabList>
           <Tab>
