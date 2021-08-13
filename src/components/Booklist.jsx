@@ -13,12 +13,10 @@ export const Booklist = ({ language, getData }) => {
 
   return (
 
-   
+
       <ChakraProvider>
-      {
-        bookData === null
-          ?
-<Spinner
+      {bookData === null ?
+        <Spinner
   thickness="4px"
   speed="0.65s"
   emptyColor="gray.200"
